@@ -1,0 +1,139 @@
+*{ margin: 0px; padding: 0px; box-sizing: border-box;}
+a{
+    color: white;
+    text-decoration: none;
+    /* font-weight: bold; */
+}
+
+p{
+    color: #AAA;
+}
+@media only screen and (min-width>320px )
+{
+}
+#Menu{
+    width: 100%;
+    float: left;
+    background-color: rgb(3, 99, 184);
+    padding-top: 0px;
+    display: flex;
+    flex-wrap: nowrap;
+    color: white;
+    margin-top: -5px;
+}
+#Menu>ul
+{
+    
+    width: 100%; height: 50px; float: left; display: inline-block   ; text-align: center;
+}
+#Menu>ul>li
+{
+    display: inline-block;
+    list-style-type: none;
+    position: relative;
+    font-size: 13px;
+    padding: 15px 7px ;
+    height: 100%;
+    text-align: -webkit-match-parent;
+    font-weight: 500;
+    line-height: 20px;
+    vertical-align: baseline;
+    
+}
+#Menu>ul>li>a{
+    padding-left: 15px;
+    border-left: 1px solid white;
+}
+#Menu>ul>li:hover
+{
+    background-color: white;
+    color: black;
+}
+#Menu>ul>li>a:hover
+{
+    background-color: white;
+    color: black;
+}
+body{
+    text-align: center;
+    background-color: rgb(230, 224, 216);
+}
+#Body
+{
+    margin-top: 20px;
+    width: 80%;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    
+}
+#Body1{
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    float: left;
+    text-align: center;
+    height: 100%;
+    box-shadow: 2px 2px 6px  #AAA;
+    padding-bottom: 10px;
+    
+}
+
+#Body2{
+    background-color: rgb(250, 250, 250);
+    width: 28%;
+    float: right;
+    text-align: center;
+    height: 100%;
+    box-shadow: 2px 2px 6px  #AAA;
+    padding-bottom: 10px;
+
+}
+.Conten{
+    text-align: left;
+    float: left;
+    width: 100%;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.Conten>a>h3:hover{
+    color: #78b43d;
+}
+.Conten>a{
+    color: black;
+}
+.Conten>img{
+    width: 210px;
+    height: 144px;
+    float: left;
+    margin-right: 10px;
+}
+.Conten2>a>h3:hover{
+    color: #78b43d;
+}
+.Conten2>a{
+    color: black;
+}
+.Conten2>img{
+    width: 150px;
+    height: 100px;
+    float: left;
+    margin-right: 10px;
+}
+.Conten2{
+    text-align: left;
+    float: left;
+    width: 100%;
+    height: auto;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+
+#Bottoom{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(3, 99, 184);
+    text-align: center;
+    color: white;
+    padding: 10px;
+}

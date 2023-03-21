@@ -1,0 +1,269 @@
+<!DOCTYPE hblanktml>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Khai báo thư viện bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Quản Lý WebSite</title>
+    <style>
+        *{box-sizing: border-box;}
+        .Can-Le{margin-left: 0px; padding: 6px; margin-top: 5px;}
+        .Can-Cot{margin-top: 20px;}
+        .table-bordered>thead{
+            background-color: rgb(169, 210, 230);
+        }
+        .btn-info{
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row bg-primary">
+            <div class="col-md-12 text-center">
+                <h2 style="font-size: 50px;">Quản Lý WebSite</h2>
+            </div>
+        </div>
+        <!-- ---------------------------------------------------- -->
+        <div class="row bg-info">
+            <div class="col-md-2 Can-Le">
+                <div class="list-group" >
+                    <a href="#" class="list-group-item active ">Quản lý tài khoản</a>
+                    <a href="#" class="list-group-item" data-toggle="modal" data-target="#myModal">Đăng ký tài khoản</a>
+                    <a href="#" class="list-group-item">Cập nhật tài khoản</a>
+                </div>
+                <div class="list-group" >
+                    <a href="#" class="list-group-item active ">Quản lý Menu</a>
+                    <a href="#" class="list-group-item">Thêm menu cha mới</a>
+                    <a href="#" class="list-group-item">Cập nhật menu cha</a>
+                    <a href="#" class="list-group-item">Cập nhật menu cha</a>
+                    <a href="#" class="list-group-item">Cập nhật menu con</a>
+                </div>
+                <div class="list-group" >
+                    <a href="#" class="list-group-item active ">Quản lý phần mục</a>
+                    <a href="#" class="list-group-item">Thêm mục cha mới</a>
+                    <a href="#" class="list-group-item">Cập nhật mục cha</a>
+                    <a href="#" class="list-group-item">Thêm mục con mới</a>
+                    <a href="#" class="list-group-item">Cập nhật mục con</a>
+                </div>
+            </div>
+            <div class="col-md-10 Can-Le">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Quản lý tài khoản người dùng</div>
+                    <div class="panel-body">
+                        <table class="table table-bordered" style="text-align: center;">
+                            <colgroup >
+                                <col width="100px">
+                                <col width="100px">
+                                <col width="100px">
+                                <col width="150px">
+                                <col width="80px">
+                            </colgroup>
+                            <thead >
+                              <tr>
+                                <th class="text-center">Họ</th>
+                                <th class="text-center">Tên</th>
+                                <th class="text-center">Số điện thoại</th>
+                                <th class="text-center">Email</th>
+                                <th class="text-center">Cập nhật</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>John</td>
+                                <td>Doe</td>
+                                <td>john@example.com</td>
+                                <td>john@example.com</td>
+                                <td><a href="#" class="btn btn-info btn-md">
+                                    <span class="glyphicon glyphicon-pencil"></span> 
+                                  </a>
+                                  <a href="#" class="btn btn-info btn-md">
+                                    <span class="glyphicon glyphicon-trash"></span>
+                                  </a></td>
+                                
+                              </tr>
+                              <tr>
+                                <td>Mary</td>
+                                <td>Moe</td>
+                                <td>mary@example.com</td>
+                                <td>mary@example.com</td>
+                                <td><a href="#" class="btn btn-info btn-md">
+                                    <span class="glyphicon glyphicon-pencil"></span>
+                                  </a>
+                                  <a href="#" class="btn btn-info btn-md">
+                                    <span class="glyphicon glyphicon-trash"></span>
+                                  </a></td>
+                              </tr>
+                              <tr>
+                                <td>July</td>
+                                <td>Dooley</td>
+                                <td>july@example.com</td>
+                                <td>july@example.com</td>
+                                <td><a href="#" class="btn btn-info btn-md">
+                                    <span class="glyphicon glyphicon-pencil"></span>
+                                  </a>
+                                  <a href="#" class="btn btn-info btn-md">
+                                    <span class="glyphicon glyphicon-trash"></span>
+                                  </a></td>
+                              </tr> <tr>
+                                <td>July</td>
+                                <td>Dooley</td>
+                                <td>july@example.com</td>
+                                <td>july@example.com</td>
+                                <td><a href="#" class="btn btn-info btn-md">
+                                    <span class="glyphicon glyphicon-pencil"></span>
+                                  </a>
+                                  <a href="#" class="btn btn-info btn-md">
+                                    <span class="glyphicon glyphicon-trash"></span>
+                                  </a></td>
+                              </tr> <tr>
+                                <td>July</td>
+                                <td>Dooley</td>
+                                <td>july@example.com</td>
+                                <td>july@example.com</td>
+                                <td><a href="#" class="btn btn-info btn-md">
+                                    <span class="glyphicon glyphicon-pencil"></span>
+                                  </a>
+                                  <a href="#" class="btn btn-info btn-md">
+                                    <span class="glyphicon glyphicon-trash"></span>
+                                  </a></td>
+                              </tr> <tr>
+                                <td>July</td>
+                                <td>Dooley</td>
+                                <td>july@example.com</td>
+                                <td>july@example.com</td>
+                                <td><a href="#" class="btn btn-info btn-md">
+                                    <span class="glyphicon glyphicon-pencil"></span>
+                                  </a>
+                                  <a href="#" class="btn btn-info btn-md">
+                                    <span class="glyphicon glyphicon-trash"></span>
+                                  </a></td>
+                              </tr> <tr>
+                                <td>July</td>
+                                <td>Dooley</td>
+                                <td>july@example.com</td>
+                                <td>july@example.com</td>
+                                <td><a href="#" class="btn btn-info btn-md">
+                                    <span class="glyphicon glyphicon-pencil"></span>
+                                  </a>
+                                  <a href="#" class="btn btn-info btn-md">
+                                    <span class="glyphicon glyphicon-trash"></span>
+                                  </a></td>
+                              </tr> <tr>
+                                <td>July</td>
+                                <td>Dooley</td>
+                                <td>july@example.com</td>
+                                <td>july@example.com</td>
+                                <td><a href="#" class="btn btn-info btn-md">
+                                    <span class="glyphicon glyphicon-pencil"></span>
+                                  </a>
+                                  <a href="#" class="btn btn-info btn-md">
+                                    <span class="glyphicon glyphicon-trash"></span>
+                                  </a></td>
+                              </tr> <tr>
+                                <td>July</td>
+                                <td>Dooley</td>
+                                <td>july@example.com</td>
+                                <td>july@example.com</td>
+                                <td><a href="#" class="btn btn-info btn-md">
+                                    <span class="glyphicon glyphicon-pencil"></span>
+                                  </a>
+                                  <a href="#" class="btn btn-info btn-md">
+                                    <span class="glyphicon glyphicon-trash"></span>
+                                  </a></td>
+                              </tr> <tr>
+                                <td>July</td>
+                                <td>Dooley</td>
+                                <td>july@example.com</td>
+                                <td>july@example.com</td>
+                                <td><a href="#" class="btn btn-info btn-md">
+                                    <span class="glyphicon glyphicon-pencil"></span>
+                                  </a>
+                                  <a href="#" class="btn btn-info btn-md">
+                                    <span class="glyphicon glyphicon-trash"></span>
+                                  </a></td>
+                              </tr> <tr>
+                                <td>July</td>
+                                <td>Dooley</td>
+                                <td>july@example.com</td>
+                                <td>july@example.com</td>
+                                <td><a href="#" class="btn btn-info btn-md">
+                                    <span class="glyphicon glyphicon-pencil"></span>
+                                  </a>
+                                  <a href="#" class="btn btn-info btn-md">
+                                    <span class="glyphicon glyphicon-trash"></span>
+                                  </a></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <!-- ---------------------------------------------------- -->
+        <div class="row well-sm bg-primary" >
+            <div class="col-md-12 text-center bottom">
+                    <p>Bản quyền thuộc về Công Ty TNHH Anh Quốc</p>
+                    <p>Địa chỉ: 123 Đường Đại lộ Lê Nin - TPVinh - Nghệ An</p>
+                    <p>Số điện thoại: 0799339567 - 0395786831 Web:QuocIT.com</p>
+            </div>
+        </div>
+        <!-- Modal -------------------------------------------->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+            
+            <!-- Modal content-->
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title well-sm ">Đăng ký tài khoản</h4>
+                </div>
+                <div class="panel-body">
+                    <form action="/action_page.php" name="form1" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                          <label for="inputdefault">Họ:</label>
+                          <input type="text" class="form-control" id="inputdefault" placeholder="Họ"  name="Ho">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputdefault">Tên:</label>
+                            <input type="text" class="form-control" id="inputdefault" placeholder="Tên" name="Ten">
+                          </div>
+                          <div class="form-group">
+                            <label for="inputdefault">Số điện thoại:</label>
+                            <input type="number" class="form-control" id="inputdefault" placeholder="Số điện thoại" name="number">
+                          </div>
+                          <div class="form-group">
+                          <label for="email">Email:</label>
+                          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                        </div>
+                        <div class="form-group">
+                          <label for="pwd">Password:</label>
+                          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox" name="remember"> Remember me</label>
+                        </div>
+                      </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-default" name="Ok" value="Lưu">Lưu</button>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                </div>
+              </div>
+                <!-- ------------------------------------------- -->
+            </div>
+            
+            </div>
+        </div>
+            </div>
+</body>
+</html>

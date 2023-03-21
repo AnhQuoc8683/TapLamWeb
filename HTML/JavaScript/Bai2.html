@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #giaymoi{width: 500px; text-align: center; border: 1px solid gray;}
+    </style>
+    <script>
+        function dinh_dang()
+          {var dt = ["truong", "khoa", "gm", "nd1", "nd2", "nd3"];
+            var mau1= document.forms["Form1"]["mau"].value;
+            var co_chu1= document.forms["Form1"]["co_chu"].value;
+            var i= document.forms["Form1"]["doituong"].value;
+            var cl= document.forms["Form1"]["canle"].value;
+            document.getElementById(dt[i]).style.fontSize=co_chu1+"px";
+            document.getElementById(dt[i]).style.color=mau1;
+            document.getElementById(dt[i]).style.textAlign=cl;
+          }  
+    </script>
+</head>
+<body style="text-align: center;">
+    <div id="giaymoi" style="display: inline-block;">
+        <p id="truong">TRƯỜNG CAO ĐẲNG KTCN VIỆT NAM - HÀN QUỐC</p>
+        <P id="khoa">KHOA: CÔNG NGHỆ THÔNG TIN</P>
+        <h2 id="gm">GIẤY MỜI</h2>
+        <p id="nd1">Tên tôi là: Đậu Công Hùng</p>
+        <p id="nd2">Trân trọng mời ông/bà:...........................</p>
+        <p id="nd3">Tới dự buổi khai trương thành lập công ty cổ phần Việt Hùng software, 
+        địa chỉ số 2, Đường Hồ Tông Thốc, Tp. Vinh</p>
+    </div> <br>
+    <form name="Form1" action="" method="post">
+        Đối tượng định dang:
+        <select name="doituong">
+            <option value="0">Trường</option>
+            <option value="1">Khoa</option>
+            <option value="2">Giấy mời</option>
+            <option value="3">Nội dung 1</option>
+            <option value="4">Nội dung 2</option>
+            <option value="5">Nội dung 3</option>
+        </select>
+        Màu:<input type="color" name="mau" value="">
+        Cỡ chữ: <input type="text" name="co_chu" value="">
+        <select name="canle">
+            <option value="center">Căn giữa</option>
+            <option value="left">Căn trái</option>
+            <option value="right">Căn phải</option>
+            <option value="justify">Căn cả hai</option>
+        </select>
+        <br>
+        <button type="button" onclick="dinh_dang()" style="width: 100px; margin-top: 10px;">OK</button>
+    </form>    
+</body>
+</html>

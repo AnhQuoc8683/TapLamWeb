@@ -1,0 +1,23 @@
+h3{
+    color: aquamarine;
+    font-family: 'Lato', sans-serif;
+}
+textarea{
+    display: block;
+}
+h4{
+    color: aquamarine;
+
+
+    color: #ff7979;
+
+    color: rgb(red, green, blue);
+
+    color: rgba(0, 0, 255 ,1);
+
+}
+h1{
+    font-family: 'Lato', sans-serif;
+    color: #0652DD;
+    text-align: center;
+}

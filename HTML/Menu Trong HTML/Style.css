@@ -1,0 +1,44 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+*{padding: 0px; margin: 0px; box-sizing: border-box;}
+#Menu_Doc{
+    width: 100%; height: 30px; background-color: aquamarine;
+}
+/* ------------------------------------------------- */
+#Menu_Doc>li{
+    display: block;
+    height: 30px; line-height: 30px;
+    width: 150px;
+    padding: 0px 15px;
+    border-right: 0px solid gray;
+    position: relative;
+}
+/* ------------------------------------------------- */
+#Menu_Doc>li:hover{
+    color: brown;
+    background-color: bisque;
+    font-weight: bold;
+}
+/* ------------------------------------------------- */
+#Menu_Doc>li>ul{
+    position: absolute;
+    display: none;
+}
+/* ------------------------------------------------- */
+#Menu_Doc>li:hover ul{
+    display: block;
+}
+/* ------------------------------------------------- */
+#Menu_Doc>li>ul>li {
+    border-bottom: 1px solid gray;
+    list-style-type: none;
+    padding-left: 9px;
+}
+/* ------------------------------------------------- */
+#Menu_Doc>li>ul>li>a:hover{
+    color: blue;
+    font-weight: bold;
+}
+/* ------------------------------------------------- */

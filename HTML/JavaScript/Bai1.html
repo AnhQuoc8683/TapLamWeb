@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+function Tinh(){
+            var a = parseInt(document.forms["Form1"]["canh_a"].value);
+            var b = parseInt(document.forms["Form1"]["canh_b"].value);
+            document.getElementById("ChuVi").innerHTML=(a+b)*2;
+            document.getElementById("DienTich").innerHTML=a*b;
+        }
+</script>
+</head>
+<body>
+    <h2>
+        Tính chu vi mảnh vườn hình chữ nhật
+    </h2>
+        <form name="Form1" action="" method="post">
+            Nhập độ dài cạnh a: <input type="text" name="canh_a" value=""><br>
+            Nhập độ dài cạnh b: <input type="text" name="canh_b" value="">
+            <button type="button" onclick="Tinh()">Gửi Dữ Liệu</button>
+        </form>
+        <p>Chu vi mảnh vườn là:</p>
+            <p id="ChuVi"></p>
+            <p>Diện tích mảnh vườn là:</p>
+            <p id="DienTich"></p>
+</body>
+</html> 

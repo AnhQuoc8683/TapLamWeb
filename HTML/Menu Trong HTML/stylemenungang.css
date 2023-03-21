@@ -1,0 +1,49 @@
+*{padding: 0px; margin: 0px; box-sizing: border-box;}
+#MenuNgang
+{
+    width: 150px;
+    height: auto;
+    border: 1px solid gray;
+    box-shadow: 2px 2px 3px gray;
+}
+
+#MenuNgang>ul>li
+{
+    border-bottom: 1px solid rebeccapurple;
+    list-style-type: none;
+    background-color: antiquewhite;
+    position: relative;
+}
+#MenuNgang>ul>li>ul
+{
+    display: none;
+    position: absolute;
+    list-style-type: none;
+}
+#MenuNgang>ul>li:hover
+{
+    background-color: aqua;
+    color: red;
+    font-weight: bolder;
+}
+#MenuNgang>ul>li:hover>ul
+{
+    display: block;
+    left: 150px;
+    top: 0px;
+    width: 150px;
+    background-color: antiquewhite;
+    color: brown;
+}
+#MenuNgang>ul>li>ul>li{
+    border-bottom: 1px solid rebeccapurple;
+}
+
+#MenuNgang>ul>li>ul>li:hover
+{
+    background-color: gray;
+    color: white;
+}
+#MenuNgang>ul>li>ul>li>ul{
+    display: none;
+}
